@@ -1,4 +1,4 @@
-# Explosive Code Sprint — Coding Ninjas 10X
+# Code Sprint — Coding Ninjas 10X
 
 A static event poster webpage for **Coding Ninjas 10X**, SRM University KTR.  
   
@@ -8,8 +8,8 @@ A static event poster webpage for **Coding Ninjas 10X**, SRM University KTR.
 - **Date:** 17 Oct 2025 (Diwali Week)  
 - **Theme:** Absurd time limits, brutal eliminations, explosive coding challenges  
 
-## Live demo (after GitHub Pages is enabled)
-https://your-username.github.io/event-poster/
+## Live demo
+https://anubhav940.github.io/Event-Poster-cn10x/
 
 ## Files
 - `index.html`
