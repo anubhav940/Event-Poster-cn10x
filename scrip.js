@@ -1,4 +1,3 @@
-// your code goes here
 (function(){
   const countdownEl = document.getElementById('countdown');
   const eventDate = new Date('October 17, 2025 10:00:00').getTime();
