@@ -1,0 +1,127 @@
+:root {
+  --bg1:#0a0a0a;
+  --bg2:#1e1e1e;
+  --accent:#ff4d4d;
+  --card-bg: rgba(255,255,255,0.05);
+  --white:#ffffff;
+}
+
+*{box-sizing:border-box}
+body {
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #2b0000, #0a0a0a);
+  color:var(--white);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  padding:2rem;
+}
+
+.poster {
+  width:100%;
+  max-width:720px;
+  background:var(--card-bg);
+  border-radius:16px;
+  padding:2rem;
+  box-shadow:0 0 25px rgba(255,0,0,0.3);
+  position:relative;
+  overflow:hidden;
+}
+
+.poster::before {
+  content:"";
+  position:absolute;
+  top:-80px;
+  right:-120px;
+  width:300px;
+  height:300px;
+  background:radial-gradient(circle, rgba(255,77,77,0.3), transparent 60%);
+  border-radius:50%;
+  animation:pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% { transform:scale(0.9); opacity:0.6; }
+  50% { transform:scale(1.1); opacity:1; }
+  100% { transform:scale(0.9); opacity:0.6; }
+}
+
+.club-name {
+  margin:0;
+  font-size:1.4rem;
+  font-weight:700;
+  color:#ff4d4d;
+  text-transform:uppercase;
+}
+.subtitle {
+  font-size:0.9rem;
+  color:rgba(255,255,255,0.8);
+  margin-bottom:1rem;
+}
+.event-title {
+  margin:0;
+  font-size:2.4rem;
+  font-weight:800;
+  text-transform:uppercase;
+}
+.tagline {
+  margin:0.2rem 0 1rem;
+  color:rgba(255,255,255,0.7);
+  font-style:italic;
+}
+
+.info {
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+  margin:1rem 0;
+}
+.info-item {
+  flex:1 1 150px;
+  background:rgba(255,255,255,0.05);
+  padding:0.6rem;
+  border-radius:8px;
+}
+.info-item strong { display:block; font-weight:600; }
+
+.description {
+  margin:1rem 0;
+  line-height:1.5;
+}
+
+.countdown {
+  margin-top:0.5rem;
+  font-weight:700;
+  color:#ffcccc;
+}
+
+.cta {
+  display:inline-block;
+  margin-top:1rem;
+  background:var(--accent);
+  color:#000;
+  padding:0.8rem 1.4rem;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+  transition:transform .15s ease, box-shadow .15s;
+}
+.cta:hover {
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(255,77,77,0.4);
+}
+
+.poster-footer {
+  margin-top:1.6rem;
+  text-align:center;
+  font-size:0.85rem;
+  color:rgba(255,255,255,0.6);
+}
+
+@media (max-width:600px) {
+  .poster { padding:1.2rem; }
+  .event-title { font-size:1.8rem; }
+  .info { flex-direction:column; }
+}
